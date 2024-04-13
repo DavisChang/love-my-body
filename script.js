@@ -13,7 +13,7 @@ document
     setText('nomatch', '')
     setText('result', '')
 
-    const keyword = document.getElementById("inputValue").value.toLowerCase();
+    const keyword = document.getElementById("inputValue").value.strip().toLowerCase();
     if (keyword) {
       setText('keyword', `keyword => ${keyword}`)
     } else {
